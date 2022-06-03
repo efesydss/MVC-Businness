@@ -12,9 +12,21 @@
     Selam
     <br />
     @Html.Button("btnTıkla", "btn btn-success", MyClass.ButtonType.button, "efe")
+    <hr />
+    @HttpUtility.HtmlEncode("<b>Efe</b>")
+    <hr />
+
+    @HttpUtility.HtmlDecode("&lt;b&gt;Efe&lt;/b&gt;")
+    <hr />
+
+    @Html.Raw("<b>efess</b>")
+    <hr />
 
 
-    
+
+
+
+
 
 </head>
 <body>
