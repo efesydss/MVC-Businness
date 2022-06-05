@@ -1,36 +1,12 @@
-﻿@using StWebLibrary.Library
+﻿
 @{
-    Layout = null;
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
 }
 
-<!DOCTYPE html>
+<h2>Index</h2>
+@*bu sayfadaki tüm kodlar __LayoutPage içindeki render body e yerleşecek*@
+<p>Ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut.</p>
+<p>Laoreet ac, aliquam sit amet justo nunc tempor, metus vel placerat suscipit, orci nisl iaculis eros, a tincidunt nisi odio eget lorem nulla condimentum tempor.</p>
+<p>Mattis ut vitae feugiat augue cras ut metus a risus iaculis scelerisque eu ac ante fusce non varius purus aenean nec magna felis fusce vestibulum.</p>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-    Selam
-    <br />
-    @Html.Button("btnTıkla", "btn btn-success", MyClass.ButtonType.button, "efe")
-    <hr />
-    @HttpUtility.HtmlEncode("<b>Efe</b>")
-    <hr />
-
-    @HttpUtility.HtmlDecode("&lt;b&gt;Efe&lt;/b&gt;")
-    <hr />
-
-    @Html.Raw("<b>efess</b>")
-    <hr />
-
-
-
-
-
-
-
-</head>
-<body>
-    <div> 
-    </div>
-</body>
-</html>

@@ -4,10 +4,71 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
+    <style>
+        .block {
+            display: block;
+            margin: 10px;
+            border: 2px dotted gray;
+        }
+        #menu ul li{
+            display:inline-block;
+            width :100px;
+            height:30px;
+            text-align:center;
+            border:1px solid gray;
+            background-color:#0026ff;
+            margin:5px;
+            line-height:30px;
+            vertical-align:middle;
+
+
+
+        }
+        #menu a {
+            color:white;
+            text-decoration:none;
+            font-size:smaller;
+
+        }
+        #menu li:hover {
+            background-color:aqua;
+        }
+        #menu li:hover a {
+            color: blue;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        @RenderBody()
+    
+        <div id="menu" class="block">
+            <ul>
+                <li>
+                    @Html.ActionLink("Home Page", "Index", "Home")
+                </li>
+                <li>
+                    @Html.ActionLink("About", "About", "Home")
+
+                </li>
+                <li>
+                    @Html.ActionLink("Contact", "Contact", "Home")
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="block">
+            @RenderBody()
+            
+        </div>
+
+            
+    <div class="block">
+
+        <b>
+            Tüm Hakları Saklıdır. &copy;
+        </b>            
+            
     </div>
+   
 </body>
 </html>
