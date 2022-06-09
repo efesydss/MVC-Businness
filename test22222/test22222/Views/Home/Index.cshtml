@@ -1,0 +1,52 @@
+﻿@model test22222.Models.Person
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h2>Home Page</h2>
+        <hr />
+        <div>
+            <b>key</b> @ViewData["key"]<hr />@*başka bir sayfaya gidersen başka actiona yani bunlar silinir*@
+            <b>bag1</b>@ViewBag.bag1 <
+            <b>tempo data</b>@TempData["temp1"]@*başka bir sayfa için temp de saklanır(sadece bir sayfa atlaytabilir veri)*@
+        </div>
+        <div>
+            @{
+                SelectListItem[] liste = new SelectListItem[3]
+                {
+                    new SelectListItem() { Text="Ef",Value="E" },
+                    new SelectListItem() { Text = "Disem",Value="D" },
+                    new SelectListItem() { Text = "Ahme",Value="A" }
+
+        };
+            }
+            @using (Html.BeginForm("Index", "Home"))
+            {
+                @Html.TextBox("text1")<br />
+
+                @Html.CheckBox("check1") @("Onay")
+                <br />
+                @Html.DropDownList("list1", liste)
+                <input type="submit" value="Gönder" />
+            }
+
+
+        </div>
+      
+        <div>
+           
+            <hr />
+           
+         </div>
+    </div>
+</body>
+</html>

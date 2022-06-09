@@ -1,0 +1,52 @@
+﻿@model test22222.ViewModels.MyViewModels
+@{
+    ViewBag.Title = "About";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+<div>
+    @using (Html.BeginForm())
+    {
+        <b>
+            @Html.TextBoxFor(x => x.personObject.ad)
+
+        </b>
+        <hr />
+        <b>
+            @Html.TextBoxFor(x => x.personObject.soyad)
+
+        </b>
+        <hr />
+        <b>
+            @Html.TextBoxFor(x => x.personObject.yas)
+
+        </b>
+        <b>
+            @Html.TextBoxFor(x => x.addressObject.Name)
+
+        </b>
+        <hr />
+        <b>
+            @Html.TextBoxFor(x => x.addressObject.City)
+
+        </b>
+
+        <input type="submit" value="Gönder" />
+    }
+    <br />
+    <b>Ad: @Model.personObject.ad</b><hr />
+    <b>Soyad: @Model.personObject.soyad</b><hr />
+    <b>Yaş : @Model.personObject.yas</b><hr />
+    </br>
+
+</div>
+<hr />
+<div>
+    <b>@Model.addressObject.Name</b><hr />
+
+    <b>@Model.addressObject.City</b><hr />
+
+
+</div>
+
+<p>Use this area to provide additional information.</p>
