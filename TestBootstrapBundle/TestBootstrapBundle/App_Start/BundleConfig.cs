@@ -22,11 +22,20 @@ namespace TestBootstrapBundle
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js"));
 
-            
-            
-            /*Patronus Bölümü*/
+            /*aynı yöntemi js için deniyorum *. operatörü*/
+
+            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
+          "~/Scripts/*.js"));
+
+            ///*Patronus Bölümü*/
+            //bundles.Add(new StyleBundle("~/Content/css").Include(
+            //          "~/Content/bootstrap.css"
+            //          ));
+
+            /*Patronus Bölümü *. anahtarı ile kullanımı*/
+            /*Edit patronus bölümü tek tek eklemek için bu ise *. ile tüm css leri eklemek için %100 working*/
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css"
+                      "~/Content/*.css"
                       ));
         }
     }
