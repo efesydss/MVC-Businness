@@ -37,37 +37,43 @@ namespace test22222
     //        bundles.Add(new StyleBundle("~/Scripts")
     //            .IncludeDirectory("~/Scripts", "*.js"));
 
-            bundles.Add(new ScriptBundle("~/bundle/js").Include(
-                        "~/Scripts/jquery-{version}.js"
-                        , "~/Scripts/jquery.validate.js"
-                        , "~/Script/modernizr-2.8.3.js"
-                        , "~/Scripts/bootstrap.bundle.js"
-                        , "~/Scripts/bootstrap.bundle.min.js"
-                        , "~/Scripts/jquery-3.6.0.intellisense.js"
-                        , "~/Scripts/bootstrap.min.js"
-                        , "~/Scripts/bootstrap.esm.min.js"
-                        , "~/Scripts/bootstrap.bundle.min.js"
-                        , "~/Scripts/jquery.validate.min.js"
-                        , "~/Scripts/jquery.validate.unobtrusive.min.js"
-                        , "~/Scripts/jquery-3.6.0.slim.min.js"
-                        , "~/Scripts/jquery-3.6.0.min.js"
-                        , "~/Scripts/jquery-3.6.0.intellisense.js"
-                        ));
-            BundleTable.EnableOptimizations = true;
+//            bundles.Add(new ScriptBundle("~/Scripts").Include(
+//                        "~/Scripts/jquery-{version}.js"
+//                        , "~/Scripts/jquery.validate.js"
+//                        , "~/Script/modernizr-2.8.3.js"
+//                        , "~/Scripts/bootstrap.bundle.js"
+//                        , "~/Scripts/bootstrap.bundle.min.js"
+//                        , "~/Scripts/jquery-3.6.0.intellisense.js"
+//                        , "~/Scripts/bootstrap.min.js"
+//                        , "~/Scripts/bootstrap.esm.min.js"
+//                        , "~/Scripts/bootstrap.bundle.min.js"
+//                        , "~/Scripts/jquery.validate.min.js"
+//                        , "~/Scripts/jquery.validate.unobtrusive.min.js"
+//                        , "~/Scripts/jquery-3.6.0.slim.min.js"
+//                        , "~/Scripts/jquery-3.6.0.min.js"
+//                        , "~/Scripts/jquery-3.6.0.intellisense.js"
+//                        ));
+//            bundles.Add(new ScriptBundle("~/Scripts").Include(
+//            "~/Scripts/*.js"
+//            ));
+//            BundleTable.EnableOptimizations = true;
 
 
-            bundles.Add(new StyleBundle("~/bundle/css").Include("~/Content/bootstrap-grid.css",
-            "~/Content/bootstrap-grid.rtl.min.css",
-            "~/Content/bootstrap-reboot.min.css",
-            "~/Content/bootstrap-reboot.rtl.min.css",
-            "~/Content/bootstrap-utilities.min.css",
-            "~/Content/bootstrap-utilities.rtl.min.css",
-            "~/Content/bootstrap.min.css",
-            "~/Content/bootstrap.rtl.min.css",
-            "~/Content/Site.css"
+//            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/bootstrap-grid.css",
+//            "~/Content/bootstrap-grid.rtl.min.css",
+//            "~/Content/bootstrap-reboot.min.css",
+//            "~/Content/bootstrap-reboot.rtl.min.css",
+//            "~/Content/bootstrap-utilities.min.css",
+//            "~/Content/bootstrap-utilities.rtl.min.css",
+//            "~/Content/bootstrap.min.css",
+//            "~/Content/bootstrap.rtl.min.css",
+//            "~/Content/Site.css"
 
-                ));
-            
+//                ));
+//            bundles.Add(new ScriptBundle("~/Content").Include(
+//"~/Content/*.css"
+//));
+
 
         }
     }
