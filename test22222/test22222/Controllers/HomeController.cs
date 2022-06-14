@@ -70,10 +70,8 @@ namespace test22222.Controllers
             return View(myViewModels);
         }
 
-        public ActionResult Contact()
+       public ActionResult Bootstrap()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
     }
