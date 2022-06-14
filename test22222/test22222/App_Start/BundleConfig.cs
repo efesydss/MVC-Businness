@@ -31,9 +31,13 @@ namespace test22222
          //< script src = "~/Scripts/jquery.validate.unobtrusive.js" ></ script >
          //< link href = "~/Content/Site.css" rel = "stylesheet" />
 
+    //        bundles.Add(new StyleBundle("~/Content")
+    //.IncludeDirectory("~/Content", "*.css")); 
 
+    //        bundles.Add(new StyleBundle("~/Scripts")
+    //            .IncludeDirectory("~/Scripts", "*.js"));
 
-            bundles.Add(new ScriptBundle("~/Content/js").Include(
+            bundles.Add(new ScriptBundle("~/bundle/js").Include(
                         "~/Scripts/jquery-{version}.js"
                         , "~/Scripts/jquery.validate.js"
                         , "~/Script/modernizr-2.8.3.js"
@@ -49,10 +53,10 @@ namespace test22222
                         , "~/Scripts/jquery-3.6.0.min.js"
                         , "~/Scripts/jquery-3.6.0.intellisense.js"
                         ));
- 
+            BundleTable.EnableOptimizations = true;
 
 
-            bundles.Add(new StyleBundle("~/Content/css").Include("~/Content/bootstrap-grid.css",
+            bundles.Add(new StyleBundle("~/bundle/css").Include("~/Content/bootstrap-grid.css",
             "~/Content/bootstrap-grid.rtl.min.css",
             "~/Content/bootstrap-reboot.min.css",
             "~/Content/bootstrap-reboot.rtl.min.css",
